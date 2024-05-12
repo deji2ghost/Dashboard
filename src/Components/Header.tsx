@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export const Header = () => {
   return (
     <>
+        {/* searchbar */}
         <div className='relative w-[50%] text-black'>
             <input 
                 placeholder='Search'
@@ -11,6 +12,7 @@ export const Header = () => {
             />    
             <FontAwesomeIcon icon={faSearch} className='absolute top-1/2 -translate-y-1/2 left-4 text-gray-300'/>
         </div> 
+        {/* account settings bar */}
         <div className='flex items-center gap-6'>
             <select name='language' id='language' className='outline-none bg-inherit cursor-pointer'>
                 <option value='English' className='bg-gray-800 cursor-pointer'>English</option>
