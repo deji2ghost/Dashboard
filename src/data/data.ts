@@ -1,41 +1,54 @@
+import { faArrowRightFromBracket, faCartShopping, faChartArea, faCog, faHeadset, faHome, faMoneyBill, faStore, faTag, faUser, faUsers } from "@fortawesome/free-solid-svg-icons"
+
 export const NavDetails1 = [
     {
         navName: 'Dashboard',
+        icon: faHome
     },
     {
-        navName: 'Orders'
+        navName: 'Orders',
+        icon: faCartShopping
     },
     {
-        navName: 'Products'
+        navName: 'Products',
+        icon: faTag
     },
     {
-        navName: 'Customers'
+        navName: 'Customers',
+        icon: faUsers
     },
     {
-        navName: 'Expenses'
+        navName: 'Expenses',
+        icon: faMoneyBill
     },
     {
-        navName: 'Sales Report'
+        navName: 'Sales Report',
+        icon: faChartArea
     },
 ]
 
 export const NavDetails2 = [
     {
-        navName: 'Store Set-up'
+        navName: 'Store Set-up',
+        icon: faStore
     },
     {
-        navName: 'Admin Account'
+        navName: 'Admin Account',
+        icon: faUser
     }
 ]
 
 export const NavDetails3 = [
     {
-        navName: 'Help & Support'
+        navName: 'Help & Support',
+        icon: faHeadset
     },
     {
-        navName: 'Settings'
+        navName: 'Settings',
+        icon: faCog
     },
     {
-        navName: 'Logout'
+        navName: 'Logout',
+        icon: faArrowRightFromBracket
     },
 ]
