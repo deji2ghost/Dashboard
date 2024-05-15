@@ -1,7 +1,13 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { NavDetails1, NavDetails2, NavDetails3 } from '../data/data'
+// import { Link } from 'react-router-dom'
 
 export const SideNav = () => {
+  // style = {{
+  //   .overflow-scroll::-webkit-scrollbar { 
+  //     display: none;
+  //   }
+  // }}
   return (
     <>
       <div className='px-6 sticky top-0 bg-inherit'>
@@ -17,12 +23,13 @@ export const SideNav = () => {
         <div className='flex flex-col gap-2'>
           {
             NavDetails1.map((nav, index) => {
+              console.log(nav.link)
               return(
                 <div key={index}>
-                  <div className='flex items-center gap-4 cursor-pointer hover:bg-stone-100 hover:text-blue-600 transition-all duration-300 ease-in-out px-6 py-2'>
-                    <FontAwesomeIcon icon={nav.icon} />
-                    <h1>{nav.navName}</h1>
-                  </div>
+                    <div className='flex items-center gap-4 cursor-pointer hover:bg-stone-100 rounded-lg hover:text-blue-600 transition-all duration-300 ease-in-out px-6 py-2'>
+                      <FontAwesomeIcon icon={nav.icon} />
+                      <h1>{nav.navName}</h1>
+                    </div>
                 </div>
               )
             })
@@ -33,7 +40,7 @@ export const SideNav = () => {
             NavDetails2.map((nav, index) => {
               return(
                 <div key={index}>
-                  <div className='flex items-center gap-4 cursor-pointer hover:bg-stone-100 hover:text-blue-600 transition-all duration-300 ease-in-out px-6 py-2'>
+                  <div className='flex items-center gap-4 cursor-pointer hover:bg-stone-100 rounded-lg hover:text-blue-600 transition-all duration-300 ease-in-out px-6 py-2'>
                     <FontAwesomeIcon icon={nav.icon} />
                     <h1>{nav.navName}</h1>
                   </div>
@@ -47,7 +54,7 @@ export const SideNav = () => {
             NavDetails3.map((nav, index) => {
               return(
                 <div key={index}>
-                  <div className='flex items-center gap-4 cursor-pointer hover:bg-stone-100 hover:text-blue-600 transition-all duration-300 ease-in-out px-6 py-2'>
+                  <div className='flex items-center gap-4 cursor-pointer hover:bg-stone-100 rounded-lg hover:text-blue-600 transition-all duration-300 ease-in-out px-6 py-2'>
                     <FontAwesomeIcon icon={nav.icon} />
                     <h1>{nav.navName}</h1>
                   </div>

@@ -1,24 +1,28 @@
 import { faArrowRightFromBracket, faCartShopping, faChartArea, faCog, faHeadset, faHome, faMoneyBill, faStore, faTag, faUser, faUsers } from "@fortawesome/free-solid-svg-icons"
+// import { Link } from  'react-router-dom'
 
 export const NavDetails1 = [
     {
         navName: 'Dashboard',
-        icon: faHome
+        icon: faHome,
+        link: '/'
     },
     {
-        navName: 'Orders',
-        icon: faCartShopping
+        navName: 'Order History',
+        icon: faCartShopping,
+        link: 'orderhistory'
     },
     {
         navName: 'Products',
-        icon: faTag
+        icon: faTag,
+        link: 'product'
     },
     {
         navName: 'Customers',
         icon: faUsers
     },
     {
-        navName: 'Expenses',
+        navName: 'Expense Statement',
         icon: faMoneyBill
     },
     {
