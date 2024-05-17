@@ -1,6 +1,6 @@
 import { Overview } from '../Components/Overview'
 
-export const Customer = () => {
+export const Customers = () => {
     return (
         <div className='grid grid-cols-[repeat(16,1fr)] grid-rows-[repeat(17,1fr)] bg-inherit gap-2'>
             {/* second header */}
