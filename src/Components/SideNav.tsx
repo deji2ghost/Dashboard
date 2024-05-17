@@ -12,8 +12,8 @@ export const SideNav = () => {
     <>
       <div className='px-6 sticky top-0 bg-inherit'>
         {/* accatex header */}
-        <div className='flex items-center border-b-2 border-gray-400 pb-5 gap-1 font-bold'>
-          <h1 className='bg-blue-600 text-xl p-1'>A</h1>
+        <div className='flex items-center border-b-2 border-gray-400 pb-5 gap-4 font-bold'>
+          <h1 className='bg-blue-600 text-xl px-1'>A</h1>
           <p className='text-base'>Accatex</p>
         </div>
       </div>

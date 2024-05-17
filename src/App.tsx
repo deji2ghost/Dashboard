@@ -25,8 +25,8 @@ function App() {
         <Routes>
           <Route path='/' element={<Dashboard />}/>
           <Route path='orderhistory' element={<OrderHistory />}/>
-          <Route path='' element={<Customer />}/>
-          <Route path='' element={<ExpenseStatement />} />
+          <Route path='customer' element={<Customer />}/>
+          <Route path='statement' element={<ExpenseStatement />} />
         </Routes>
       </Router>
     </div>

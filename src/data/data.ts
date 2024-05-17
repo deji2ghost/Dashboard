@@ -19,15 +19,18 @@ export const NavDetails1 = [
     },
     {
         navName: 'Customers',
-        icon: faUsers
+        icon: faUsers,
+        link: 'statement'
     },
     {
         navName: 'Expense Statement',
-        icon: faMoneyBill
+        icon: faMoneyBill,
+        link: 'product',
     },
     {
         navName: 'Sales Report',
-        icon: faChartArea
+        icon: faChartArea,
+        link: 'product'
     },
 ]
 
