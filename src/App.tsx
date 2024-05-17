@@ -5,7 +5,7 @@ import { Header } from './Components/Header'
 // import { Overview } from './Components/Overview'
 import { Dashboard } from './pages/Dashboard'
 import { OrderHistory } from './pages/OrderHistory';
-import { Customer } from './pages/Customers';
+import { Customers } from './pages/Customers';
 import { ExpenseStatement } from './pages/ExpenseStatement';
 
 function App() {
