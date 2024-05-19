@@ -28,9 +28,9 @@ function App() {
         <Routes>
           {/* {routesComponent} */}
           <Route path='/' element={<Dashboard />} />
-          <Route path='/pages/OrderHistory' element={<OrderHistory />} />
-          <Route path='/pages/Customers' element={<Customers />} />
-          <Route path='/pages/ExpenseStatement' element={<ExpenseStatement />} />
+          <Route path='pages/OrderHistory' element={<OrderHistory />} />
+          <Route path='pages/Customers' element={<Customers />} />
+          <Route path='pages/ExpenseStatement' element={<ExpenseStatement />} />
         </Routes>
       </Router>
     </div>
