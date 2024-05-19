@@ -3,7 +3,7 @@ import { Overview } from '../Components/Overview'
 
 export const OrderHistory = () => {
     return (
-        <div className='grid grid-cols-[repeat(16,1fr)] grid-rows-[repeat(17,1fr)] bg-inherit gap-2'>
+        <div className='grid grid-cols-[repeat(16,1fr)] grid-rows-[repeat(17,1fr)] bg-inherit gap-2 h-[1000px]'>
             {/* second header */}
             <div className='bg-gray-800 col-[1/17] row-[1/3] flex justify-between items-center px-4 rounded-md drop-shadow-lg'>
                 <Overview title='Order History'/>

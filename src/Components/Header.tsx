@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export const Header = () => {
   return (
-    <>
+    <div className='bg-gray-800 h-[60px] w-full sticky top-0 z-50 col[2/3] row-[1/2] flex items-center justify-between p-4 rounded-b-md drop-shadow-lg'>
         {/* searchbar */}
         <div className='relative w-[50%] text-black'>
             <input 
@@ -32,6 +32,6 @@ export const Header = () => {
                 </div>
             </div>
         </div>   
-    </>
+    </div>
   )
 }

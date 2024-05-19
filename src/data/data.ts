@@ -1,3 +1,4 @@
+import { BarChartOutlined, HomeOutlined, MoneyCollectFilled, ShoppingCartOutlined, TagFilled, UserOutlined } from "@ant-design/icons"
 import { faArrowRightFromBracket, faCartShopping, faChartArea, faCog, faHeadset, faHome, faMoneyBill, faStore, faTag, faUser, faUsers } from "@fortawesome/free-solid-svg-icons"
 
 export const NavDetails1 = [
@@ -28,6 +29,36 @@ export const NavDetails1 = [
     {
         navName: 'Sales Report',
         icon: faChartArea
+    },
+]
+export const NavDetails = [
+    {
+        navName: 'Dashboard',
+        icon: HomeOutlined,
+        path: '/',
+    },
+    {
+        navName: 'Order History',
+        icon: ShoppingCartOutlined,
+        path: '/pages/OrderHistory',
+    },
+    {
+        navName: 'Products',
+        icon: TagFilled,
+    },
+    {
+        navName: 'Customers',
+        icon: UserOutlined,
+        path: '/pages/Customers',
+    },
+    {
+        navName: 'Expense Statement',
+        icon: MoneyCollectFilled,
+        path: '/pages/ExpenseStatement',
+    },
+    {
+        navName: 'Sales Report',
+        icon: BarChartOutlined
     },
 ]
 
