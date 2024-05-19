@@ -2,7 +2,7 @@ import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { SideNav } from './Components/SideNav'
 import { Header } from './Components/Header'
-// import { Overview } from './Components/Overview'
+// import { NavDetails1 } from './data/data'
 import { Dashboard } from './pages/Dashboard'
 import { OrderHistory } from './pages/OrderHistory';
 import { Customers } from './pages/Customers';
@@ -10,6 +10,9 @@ import { ExpenseStatement } from './pages/ExpenseStatement';
 
 function App() {
 
+  // const routesComponent = NavDetails1.map(({component, path}) => (
+  //   <Route key={component} path={path} element={component}/>
+  // ))
   return (
     <div className='text-stone-100 grid grid-cols-[250px,1fr] grid-rows-[60px,1fr] h-[1000px] gap-2'>
       {/* sideNav */}
@@ -23,10 +26,11 @@ function App() {
       </div>
       <Router>
         <Routes>
-          <Route path='/' element={<Dashboard />}/>
-          <Route path='orderhistory' element={<OrderHistory />}/>
-          <Route path='customer' element={<Customer />}/>
-          <Route path='statement' element={<ExpenseStatement />} />
+          {/* {routesComponent} */}
+          <Route path='/' element={<Dashboard />} />
+          <Route path='pages/orderhistory' element={<OrderHistory />} />
+          <Route path='pages/customers' element={<Customers />} />
+          <Route path='pages/expensestatement' element={<ExpenseStatement />} />
         </Routes>
       </Router>
     </div>
