@@ -17,17 +17,14 @@ function App() {
     setCollapsed(!collapsed)
   }
 
-  // const routesComponent = NavDetails1.map(({component, path}) => (
-  //   <Route key={component} path={path} element={component}/>
-  // ))
   return (
     // <div className='text-stone-100 grid grid-cols-[250px,1fr] grid-rows-[60px,1fr] h-[1000px] gap-2'>
-    <div className='text-stone-100 flex h-[1000px] gap-2'>
+    <div className='app text-stone-100 flex h-[1000px] gap-2'>
       {/* sideNav */}
       {/* <div className='bg-slate-800 row-[1/3] col-[1/2] p-2 flex flex-col gap-5 h-screen sticky top-0 drop-shadow-lg'> */}
-      <div className={`bg-slate-800 ${collapsed ? 'transform w-[21%]' : 'transform w-[7%]'} transition-all ease-in-out duration-300 p-2 flex flex-col gap-5 h-screen sticky top-0 drop-shadow-lg`}>
+      <div className={`bg-black ${collapsed ? 'transform w-[23%]' : 'transform w-[7%]'} transition-all ease-in-out duration-300 p-2 flex flex-col gap-5 h-screen sticky top-0 drop-shadow-lg`}>
+        <button onClick={handleCollapse} className='pt-3'>{collapsed ? <FontAwesomeIcon icon={faChevronLeft} /> : <FontAwesomeIcon icon={faChevronRight} /> }</button>
         <SideNav collapsed={collapsed}/>
-        <button onClick={handleCollapse}>{collapsed ? <FontAwesomeIcon icon={faChevronLeft} /> : <FontAwesomeIcon icon={faChevronRight} /> }</button>
       </div>
 
       {/* Header */}
